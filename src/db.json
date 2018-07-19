@@ -1,0 +1,30 @@
+{
+  "cakes": [
+    {
+      "id": 1,
+      "cssstyle": "First",
+      "name": "Chocolate",
+      "description": "Cupidatat laboris magna sit labore deserunt.",
+      "image": "./images/cafe3.jpg"
+    },
+    {
+      "id": 2,
+      "cssstyle": "Second",
+      "name": "Mashmarrow",
+      "description": "In adipisicing exercitation voluptate excepteur ea sunt sint nisi aute id cupidatat in officia tempor.",
+      "image": "./images/cafe4.jpg"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "blue berry",
+      "image": "./images/fruit1.jps"
+    },
+    {
+      "id": "ing2",
+      "name": "strawberry",
+      "image": "./images/fruit2.jps"
+    }
+  ]
+}
