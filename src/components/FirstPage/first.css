@@ -1,3 +1,18 @@
+.box {
+  background: #4d3210;
+  width: 15%;
+  height: 4rem;
+  margin-bottom: 2rem; }
+
+.pageHeader {
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #4d3210;
+  padding-left: 2rem;
+  padding-top: 1rem; }
+  @media screen and (min-width: 768px) {
+    .pageHeader {
+      padding-left: 4rem; } }
+
 @keyframes fadeInText {
   0% {
     opacity: 0; }
@@ -175,8 +190,7 @@
 .loaded .image-wrapper::before,
 .loaded .image-wrapper::after {
   background: #ffffff;
-  width: 30%;
-  opacity: 0.85; }
+  width: 30%; }
 
 .loaded {
   overflow: hidden;

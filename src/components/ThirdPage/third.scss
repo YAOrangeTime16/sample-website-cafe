@@ -4,6 +4,7 @@
 
 .icon {
   width: 20%;
+  height: 12rem;
   padding: 5% 10% 0% 10%;
 
   @media screen and (min-width: 768px) {
@@ -30,11 +31,11 @@
 
 .ingBg {
   position: relative;
-  left: 12rem;
+  left: 8rem;
   bottom: 9rem;
   height: 2rem;
   background: #ffffff;
-  width: 140%;
+  width: 170%;
   border-bottom: 1rem solid #c77171;
   z-index: 160;
 

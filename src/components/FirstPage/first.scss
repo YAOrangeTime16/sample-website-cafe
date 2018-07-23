@@ -1,4 +1,4 @@
-$primary-clr: #4d3210;
+@import '../app.scss';
 
 @keyframes fadeInText {
   0% {
@@ -223,7 +223,6 @@ $primary-clr: #4d3210;
 .loaded .image-wrapper::after {
     background: #ffffff;
     width: 30%;
-    opacity: 0.85;
 }
 
 .loaded {

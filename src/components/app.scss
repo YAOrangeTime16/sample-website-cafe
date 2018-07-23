@@ -1,5 +1,8 @@
+$primary-clr: #4d3210;
+$secondary-clr: #c77171;
+
 .box {
-  background: #4d3210;
+  background: $primary-clr;
   width: 15%;
   height: 4rem;
   margin-bottom: 2rem;
@@ -7,7 +10,7 @@
 
 .pageHeader {
   color: #ffffff;
-  text-shadow: 2px 2px 3px #4d3210;
+  text-shadow: 2px 2px 3px $primary-clr;
   padding-left: 2rem;
   padding-top: 1rem;
 

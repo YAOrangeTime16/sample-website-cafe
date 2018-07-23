@@ -4,7 +4,7 @@ import withIntersectionObserver from '../withIntersectionObserver';
 import { Honey, Egg, Fruit } from '../svg';
 import './third.css';
 
-configureAnchors({offset: 10, scrollDuration: 1000});
+configureAnchors({offset: 20, scrollDuration: 1000});
 
 class ThirdPage extends Component {
   state = {

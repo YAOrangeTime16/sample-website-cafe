@@ -1,5 +1,17 @@
-.secondPage {
-  width: 100%; }
+.box {
+  background: #4d3210;
+  width: 15%;
+  height: 4rem;
+  margin-bottom: 2rem; }
+
+.pageHeader {
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #4d3210;
+  padding-left: 2rem;
+  padding-top: 1rem; }
+  @media screen and (min-width: 768px) {
+    .pageHeader {
+      padding-left: 4rem; } }
 
 .section {
   height: 100%; }
@@ -22,7 +34,7 @@
 .boxSecond {
   width: 80%;
   margin: 1rem auto 0 auto;
-  background: #4d3210; }
+  background: #c77171; }
   @media screen and (min-width: 768px) {
     .boxFirst,
     .boxSecond {
@@ -82,16 +94,16 @@
   z-index: 10; }
   @media screen and (min-width: 768px) {
     .belt {
-      top: 4.5rem; } }
+      top: 3.5rem; } }
 
 .subTitle {
   font-size: 2rem;
   margin: 0;
   text-align: center;
   position: relative;
-  top: 1rem;
+  top: 0rem;
   color: #202020;
-  text-shadow: 2px 2px 8px #ffffff;
+  text-shadow: 2px 2px 3px #ffffff;
   z-index: 30; }
   @media screen and (min-width: 768px) {
     .subTitle {

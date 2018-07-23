@@ -1,6 +1,4 @@
-.secondPage {
-  width: 100%;
-}
+@import '../app.scss';
 
 .section {
   height: 100%;
@@ -32,7 +30,7 @@
 .boxSecond {
   width: 80%;
   margin: 1rem auto 0 auto;
-  background: rgb(77, 50, 16);
+  background: $secondary-clr;
 
   @media screen and (min-width: 768px){
     width: 50%;
@@ -105,7 +103,7 @@
       z-index: 10;
 
   @media screen and (min-width: 768px){  
-    top: 4.5rem;   
+    top: 3.5rem;   
   }
 }
 
@@ -114,9 +112,9 @@
   margin: 0;
   text-align: center;
   position: relative;
-  top: 1rem;
+  top: 0rem;
   color: #202020;
-  text-shadow: 2px 2px 8px #ffffff;
+  text-shadow: 2px 2px 3px #ffffff;
   z-index: 30;
 
   @media screen and (min-width: 768px){
