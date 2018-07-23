@@ -1,0 +1,62 @@
+.thirdPage {
+  height: 100vh; }
+
+.icon {
+  width: 20%;
+  padding: 5% 10% 0% 10%; }
+  @media screen and (min-width: 768px) {
+    .icon {
+      padding: 0%;
+      width: 15%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 1400px) {
+    .icon {
+      width: 12%; } }
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  @media screen and (min-width: 768px) {
+    .iconContainer {
+      flex-direction: row;
+      padding-top: 7%; } }
+
+.ingBg {
+  position: relative;
+  left: 12rem;
+  bottom: 9rem;
+  height: 2rem;
+  background: #ffffff;
+  width: 140%;
+  border-bottom: 1rem solid #c77171;
+  z-index: 160; }
+  @media screen and (min-width: 768px) {
+    .ingBg {
+      top: 1rem;
+      left: 0rem;
+      width: 110%; } }
+
+@keyframes fadeinIngText {
+  0% {
+    opacity: 0;
+    top: 10rem; }
+  100% {
+    opacity: 1;
+    top: 4rem; } }
+
+.noIngText {
+  opacity: 0; }
+
+.ingText {
+  position: relative;
+  animation: fadeinIngText 2s ease-out;
+  top: 4rem;
+  z-index: 10; }
+
+.hideIcon {
+  transform: rotateX(-90deg); }
+
+.fadeinIcon {
+  transform: rotateX(0deg);
+  transition: all 1s ease-out; }

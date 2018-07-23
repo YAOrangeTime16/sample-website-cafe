@@ -1,7 +1,9 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import './second.css';
 import ImageComponent from './ImageComponent';
 import { cakesData, ingredientsData } from '../api';
+
 
 class SecondPage extends Component {
   state = {
@@ -32,9 +34,14 @@ class SecondPage extends Component {
 
   render(){
     return(
+      <ScrollableAnchor id={"sweets"}>
       <section className="secondPage">
+        <div className="box">
+          <h2 className="pageHeader">Sweets</h2>
+        </div>
         {this.renderCakes()}
       </section>
+      </ScrollableAnchor>
     )
   }
 }

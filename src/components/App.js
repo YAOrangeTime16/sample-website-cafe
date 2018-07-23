@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import FirstPage from './FirstPage';
 import SecondPage from './SecondPage';
+import ThirdPage from './ThirdPage';
+import ForthPage from './ForthPage';
+import './app.css';
 
 class App extends Component {
   render() {
@@ -8,6 +11,8 @@ class App extends Component {
       <div>
         <FirstPage />
         <SecondPage />
+        <ThirdPage />
+        <ForthPage />
       </div>
     );
   }

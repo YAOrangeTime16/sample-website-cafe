@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import withIntersectionObserver from './withIntersectionObserver';
+import withIntersectionObserver from '../withIntersectionObserver';
 import './second.css';
 
 class ImageComponent extends Component {
@@ -15,7 +15,7 @@ class ImageComponent extends Component {
     const transition = isVisible ? 'nextDescription' : '';
     return (
       <section className="section">
-        <div className={isVisible && 'belt'}/>
+        <div className={isVisible ? 'belt' : undefined}/>
         <div  className={`box${styleNum} ${visibility}`}>
           <h2 className="subTitle">{cake}</h2>
           <img className={`photo${styleNum}`} src={imgSrc} alt="cake" />

@@ -1,0 +1,126 @@
+.secondPage {
+  width: 100%;
+}
+
+.section {
+  height: 100%;
+}
+
+@keyframes changeWidth {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.visible {
+  animation: changeWidth 1s linear;
+}
+
+.boxFirst,
+.boxSecond {
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  background: rgb(77, 50, 16);
+
+  @media screen and (min-width: 768px){
+    width: 50%;
+    height: 90%;
+  }
+
+  @media screen and (min-width: 1400px){
+    width: 30%;
+  }
+
+}
+
+.descriptionFirst,
+.descriptionSecond {
+  font-size: 1.4rem;
+  padding: 1rem;
+  word-wrap: break-word;
+  position: relative;
+  top: -1rem;
+  text-align: center;
+  opacity: 0;
+  transform: rotateX(-90deg);
+  transition: all 1s linear;
+  transition-delay: 300ms;
+}
+
+.nextDescription {
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+.photoFirst,
+.photoSecond {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+@keyframes transBelt{
+  0% {
+    width: 0%;
+    z-index: 10;
+  }
+
+  50% {
+    width: 80%;
+    opacity: 1;
+  }
+  
+  80% {
+    width: 100%;
+    opacity: 0.5;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.belt {
+  display: block;
+      position: relative;
+      top: 2.5rem;
+      height: 12px;
+      border-radius: 10px;
+      opacity: 0;
+      background: linear-gradient(to left, rgba(199, 113, 113, 0.8), rgba(121, 223, 193, 0));
+      animation: transBelt 1.5s linear;
+      z-index: 10;
+
+  @media screen and (min-width: 768px){  
+    top: 4.5rem;   
+  }
+}
+
+.subTitle {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: 1rem;
+  color: #202020;
+  text-shadow: 2px 2px 8px #ffffff;
+  z-index: 30;
+
+  @media screen and (min-width: 768px){
+    font-size: 3rem;
+  }
+}
+
