@@ -21,7 +21,7 @@ class FirstPage extends Component {
         <div className="backDecoHor" />
         <div className={this.state.loaded}>
           <div className="image-wrapper">
-            <img className="image" src="../images/cafe2.jpg" alt="main"/>
+            <img className="image" src="./images/cafe2.jpg" alt="main"/>
           </div>
         </div>
           <h2 className="description">Dolore cillum minim eu ea elit duis adipisicing labore</h2>
