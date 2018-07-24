@@ -11,8 +11,10 @@ class ImageComponent extends Component {
       isVisible,
       styleNum
     } = this.props;
+    
     const visibility = isVisible ? 'visible' : 'invisible';
     const transition = isVisible ? 'nextDescription' : '';
+
     return (
       <section className="section">
         <div className={isVisible ? 'belt' : undefined}/>
