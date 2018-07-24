@@ -44,7 +44,7 @@
   }
 }
 
-#firstPage {
+.firstPage {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -114,13 +114,17 @@
   }
 }
 
+.changeBg {
+  background: #ffffff;
+}
+
 .description {
   font-size: 1.8rem;
   padding: 3rem .5rem;
   color: $primary-clr;
   word-wrap: break-word;
   position: relative;
-  bottom: 2rem;
+  bottom: -2rem;
   text-align: center;
 
   &::before,
@@ -133,12 +137,11 @@
   }
 
   @media screen and (min-width: 768px){
+    position: absolute;
     animation: fadeInText 3s linear;
     padding: 2rem 4rem;
-    bottom: 8rem;
+    bottom: 1rem;
     text-shadow: 2px 2px 3px #ffffff;
-    position: absolute;
-    bottom: 6rem;
     right: 0rem;
     z-index: 200;
     width: 40%;
@@ -155,17 +158,13 @@
   right: 0;
   background: linear-gradient(#ffffff, rgba(255, 255, 255, 0));
   width: 100%;
-  height: 15%;
+  height: 12%;
   z-index: 200;
   animation: fadeInText 2s;
 
   @media screen and (min-width: 768px){
     background: none;
   }
-}
-
-.changeBg {
-  background: #ffffff;
 }
 
 .image {
@@ -180,19 +179,19 @@
 
 .image-wrapper {
   position: relative;
+  top: 3rem;
   width: 100%;
   z-index: 100;
 
   @media screen and (min-width: 768px){ 
     width: 70%;
-    padding-top: 10rem;
+    padding-top: 7rem;
     margin: 0 auto;
     overflow: hidden;
   }
   
   @media screen and (min-width: 1400px){
     width: 60%;
-    padding-top: 9rem;
   }
 }
 
@@ -240,7 +239,7 @@
 }
 
 .menu {
-  padding-top: 2rem;
+  padding-top: 1rem;
 
   @media screen and (min-width: 768px){
     padding-top: 3rem;

@@ -19,7 +19,7 @@
 
 .aboutBox {
   position: absolute;
-  top: 12rem;
+  top: 10rem;
   right: 1rem;
   background: #c77171;
   width: 40%;
@@ -48,7 +48,7 @@
   position: absolute;
   top: 7rem;
   width: 100%;
-  height: 35%;
+  height: 20%;
   background: linear-gradient(to top, rgba(255, 255, 255, 0), #ffffff); }
   @media screen and (min-width: 665px) {
     .aboutImageShade {
@@ -64,7 +64,7 @@
 
 .aboutText {
   position: absolute;
-  top: 12rem;
+  top: 10rem;
   padding: 0% 10%;
   font-size: 2rem;
   color: #ffffff;

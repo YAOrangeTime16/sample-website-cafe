@@ -30,6 +30,20 @@
 .visible {
   animation: changeWidth 1s linear; }
 
+.belt {
+  display: block;
+  position: relative;
+  top: 2.5rem;
+  height: 12px;
+  border-radius: 10px;
+  opacity: 0;
+  background: linear-gradient(to left, rgba(199, 113, 113, 0.8), rgba(121, 223, 193, 0));
+  animation: transBelt 1.5s linear;
+  z-index: 10; }
+  @media screen and (min-width: 768px) {
+    .belt {
+      top: 3.5rem; } }
+
 .boxFirst,
 .boxSecond {
   width: 80%;
@@ -82,20 +96,6 @@
     width: 100%;
     opacity: 0; } }
 
-.belt {
-  display: block;
-  position: relative;
-  top: 2.5rem;
-  height: 12px;
-  border-radius: 10px;
-  opacity: 0;
-  background: linear-gradient(to left, rgba(199, 113, 113, 0.8), rgba(121, 223, 193, 0));
-  animation: transBelt 1.5s linear;
-  z-index: 10; }
-  @media screen and (min-width: 768px) {
-    .belt {
-      top: 3.5rem; } }
-
 .subTitle {
   font-size: 2rem;
   margin: 0;
@@ -105,6 +105,3 @@
   color: #202020;
   text-shadow: 2px 2px 3px #ffffff;
   z-index: 30; }
-  @media screen and (min-width: 768px) {
-    .subTitle {
-      font-size: 3rem; } }

@@ -15,7 +15,7 @@ class FirstPage extends Component {
 
   render(){
     return (
-      <section id="firstPage">
+      <section className="firstPage">
         <Header />
         <div className="backDecoVer" />
         <div className="backDecoHor" />
