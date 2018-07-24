@@ -32,7 +32,7 @@ class ThirdPage extends Component {
       <Fragment key={item.icon.name+index}>
           <div className={`icon ${visibility}`}>
             { item.icon() }
-            <div className="ingBg">
+            <div className="ingBorder">
               <p className={`${iconText}`}>{item.text}</p>
             </div>
           </div>

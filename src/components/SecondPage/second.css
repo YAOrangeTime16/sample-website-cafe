@@ -2,7 +2,7 @@
   background: #4d3210;
   width: 15%;
   height: 4rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
 
 .pageHeader {
   color: #ffffff;
@@ -54,6 +54,10 @@
     .boxSecond {
       width: 50%;
       height: 90%; } }
+  @media (min-width: 700px) and (orientation: landscape) {
+    .boxFirst,
+    .boxSecond {
+      height: 70%; } }
   @media screen and (min-width: 1400px) {
     .boxFirst,
     .boxSecond {

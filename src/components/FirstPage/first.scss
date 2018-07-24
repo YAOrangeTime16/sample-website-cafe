@@ -47,7 +47,7 @@
 .firstPage {
   position: relative;
   width: 100%;
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 .backDecoVer, 
@@ -101,7 +101,7 @@
   @media screen and (min-width: 768px){
       display: block;
       position: absolute;
-      top: 6rem;
+      top: 5rem;
       width: 90%;
       height: 5px;
       background: linear-gradient(to right, rgb(199, 113, 113), rgba(226, 150, 49, 0));
@@ -119,13 +119,14 @@
 }
 
 .description {
-  font-size: 1.8rem;
-  padding: 3rem .5rem;
+  font-size: 1.4rem;
+  padding: 2rem .5rem;
   color: $primary-clr;
   word-wrap: break-word;
   position: relative;
   bottom: -2rem;
   text-align: center;
+  z-index: 200;
 
   &::before,
   &::after {
@@ -136,19 +137,32 @@
     height: 5px;
   }
 
-  @media screen and (min-width: 768px){
+  @include mq(s-land){
+    bottom: 6rem;
+    right: -25rem;
+    width: 30%;
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+  }
+
+  @include mq(){
     position: absolute;
     animation: fadeInText 3s linear;
     padding: 2rem 4rem;
-    bottom: 1rem;
+    bottom: 4rem;
     text-shadow: 2px 2px 3px #ffffff;
     right: 0rem;
     z-index: 200;
+    width: 60%;
+  }
+
+  @include mq(m-land){
     width: 40%;
   }
   
-  @media screen and (min-width: 1400px){
-      right: 0rem;
+  @media screen and (min-width: 1200px){
+    width: 40%;
+    right: 0rem;
   }
 }
 
@@ -162,7 +176,7 @@
   z-index: 200;
   animation: fadeInText 2s;
 
-  @media screen and (min-width: 768px){
+  @include mq(){
     background: none;
   }
 }
@@ -171,9 +185,12 @@
   width: 100%;
   position: relative;
 
-  @media screen and (min-width: 768px){ 
+  @include mq(){
     border-radius: 8px;
     animation: imageShift 1s linear;
+  }
+  @include mq(m-land){
+    top: -1rem;
   }
 }
 
@@ -182,15 +199,23 @@
   top: 3rem;
   width: 100%;
   z-index: 100;
+  overflow: hidden;
 
-  @media screen and (min-width: 768px){ 
+  @include mq(){
     width: 70%;
     padding-top: 7rem;
     margin: 0 auto;
     overflow: hidden;
   }
+
+  @media (max-width: 840px) and (orientation: landscape){
+    height: 90vh;
+    width: 60%;
+    top: 3rem;
+    padding-top: 4rem;
+  }
   
-  @media screen and (min-width: 1400px){
+  @include mq(xxl){
     width: 60%;
   }
 }
@@ -205,12 +230,15 @@
     z-index: 250;
     transition: all 800ms linear;
     @media screen and (min-width: 768px){
-      transform: skewX(-20deg);
+      transform: skewX(-15deg);
     }
 }
 
 .image-wrapper::before {
   left: -20%;
+  @media (max-width: 767px)and(orientation: landscape){
+    top: 0rem;
+  }
 }
 
 .image-wrapper::after {
@@ -255,9 +283,9 @@
 
 .title {
   position: relative;
-  top: -2.5rem;
+  top: -1.5rem;
   padding-left: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #4d3210;
   text-shadow: 2px 2px 2px #ffffff;
   z-index: 200;

@@ -1,5 +1,10 @@
+@import '../app.scss';
+
 .thirdPage {
   height: 100vh;
+  @media screen and (min-width: 768px) and (orientation: portrait) {
+    height: 70vh;
+  }
 }
 
 .icon {
@@ -13,7 +18,12 @@
     margin: 0 auto;
   }
 
-  @media screen and (min-width: 1400px) {
+  @include mq(m-land) {
+    height: 10rem;
+    padding: 1% 10% 0% 10%;
+  }
+
+  @include mq(xxl){
       width: 12%;
   }
 }
@@ -23,26 +33,27 @@
   flex-direction: column;
   justify-content: space-around;
 
-  @media screen and (min-width: 768px) {
+  @include mq(s-land){
       flex-direction: row;
-      padding-top: 7%;
+      padding-top: 0%;
   }
+
 }
 
-.ingBg {
+.ingBorder {
   position: relative;
   left: 8rem;
   bottom: 9rem;
-  height: 2rem;
+  height: 1rem;
   background: #ffffff;
   width: 170%;
   border-bottom: 1rem solid #c77171;
   z-index: 160;
 
-  @media screen and (min-width: 768px) {
-    top: 1rem;
+  @include mq(s-land){
+    top: -1rem;
     left: 0rem;
-    width: 110%;
+    width: 130%;
   }
 }
 
@@ -65,7 +76,7 @@
 .ingText {
   position: relative;
   animation: fadeinIngText 2s ease-out;
-  top: 4rem;
+  top: 3rem;
   z-index: 10;
 }
 
