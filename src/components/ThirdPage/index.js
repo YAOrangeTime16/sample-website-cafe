@@ -4,22 +4,22 @@ import withIntersectionObserver from '../withIntersectionObserver';
 import { Honey, Egg, Fruit } from '../svg';
 import './third.css';
 
-configureAnchors({offset: 20, scrollDuration: 1000});
+configureAnchors({offset: 0, scrollDuration: 1000});
 
 class ThirdPage extends Component {
   state = {
     icons: [
       {
         icon: Honey,
-        text: 'Excepteur id in veniam commodo occaecat fugiat laboris eiusmod culpa do.'
+        text: 'Excepteur id in veniam commodo occaecat fugiat'
       },
       {
         icon: Fruit,
-        text: 'Elit ut exercitation sint voluptate ad sint incididunt aliquip eu excepteur cillum.'
+        text: 'Elit ut exercitation sint voluptate ad sint incididunt'
       },
       {
         icon: Egg,
-        text: 'Nostrud mollit non laboris cillum irure culpa.'
+        text: 'Nostrud mollit non laboris cillum irure culpa'
       }
     ]
   }
@@ -56,4 +56,4 @@ class ThirdPage extends Component {
   }
 }
 
-export default withIntersectionObserver(0.99)(ThirdPage);
+export default withIntersectionObserver(0.9)(ThirdPage);

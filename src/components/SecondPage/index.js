@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import './second.css';
 import ImageComponent from './ImageComponent';
 import { cakesData, ingredientsData } from '../api';
 
+configureAnchors({offset: 0, scrollDuration: 1000});
 
 class SecondPage extends Component {
   state = {

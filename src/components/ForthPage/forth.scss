@@ -1,5 +1,5 @@
 
-@import '../app.scss';
+@import '../_variables.scss';
 
 .forthPage {
  height: 100vh;
@@ -22,6 +22,11 @@
     top: 18rem;
     width: 30%;
   }
+
+  @include mq(l-port){
+    top: 10rem;
+  }
+  
 }
 
 .aboutImage {
@@ -55,6 +60,10 @@
   @include mq(xl){
     height: 90%;
   }
+
+  @include mq(l-port){
+    height: 30%;
+  }
 }
 
 .aboutText {
@@ -74,9 +83,9 @@
 }
 
 .contactContainer {
-  width: 100%;
+  width: 80%;
   text-align: center;
-  margin-top: 4rem;
+  margin: 4rem auto;
   @media screen and (min-width: 1100px), (orientation: landscape){
     text-align: left;
     padding: 2rem 0 2rem 2rem;

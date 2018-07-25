@@ -144,9 +144,9 @@
 .header {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   background: linear-gradient(#ffffff, rgba(255, 255, 255, 0));
-  width: 100%;
+  width: 95%;
   height: 12%;
   z-index: 200;
   animation: fadeInText 2s; }
@@ -163,7 +163,7 @@
       animation: imageShift 1s linear; } }
   @media (min-width: 700px) and (orientation: landscape) {
     .image {
-      top: -1rem; } }
+      padding-top: -1rem; } }
 
 .image-wrapper {
   position: relative;
@@ -216,6 +216,17 @@
   background: #ffffff;
   width: 30%; }
 
+.loaded .image-wrapper::before {
+  width: 30%; }
+
+.loaded .image-wrapper::after {
+  width: 40%; }
+  @media screen and (min-width: 768px) {
+    .loaded .image-wrapper::after {
+      width: 30%;
+      top: 10%;
+      right: -10%; } }
+
 .loaded {
   overflow: hidden;
   width: 100%; }
@@ -226,7 +237,8 @@
   display: flex;
   flex-direction: row;
   writing-mode: vertical-rl;
-  list-style: none; }
+  list-style: none;
+  margin-right: 0rem; }
 
 .menu {
   padding-top: 1rem; }

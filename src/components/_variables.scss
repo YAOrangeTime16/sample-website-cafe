@@ -1,0 +1,18 @@
+$primary-clr: #4d3210;
+$secondary-clr: #c77171;
+$breakpoints : (
+  's': 'screen and (min-width: 600px)',
+  's-land': 'screen and (min-width: 600px) and (orientation: landscape)',
+  'm': 'screen and (min-width: 768px)',
+  'm-land' : '(min-width: 700px) and (orientation: landscape)',
+  'l': 'screen and (min-width: 1000px)',
+  'l-port': 'screen and (min-width: 1000px) and (orientation: portrait)',
+  'xl': 'screen and (min-width: 1100px)',
+  'xxl': 'screen and (min-width: 1400px)',
+);
+
+@mixin mq ($breakpoint: m) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

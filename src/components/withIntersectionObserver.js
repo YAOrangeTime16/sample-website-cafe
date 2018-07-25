@@ -17,9 +17,8 @@ export default threshold => BaseComponent => {
     };
 
     render() {
-      const root = document.querySelector('.secondPage')
       return (
-        <Observer rootMargin="10px 0px 5px" onChange={this.handleChange} threshold={threshold} >
+        <Observer onChange={this.handleChange} threshold={threshold} >
           <BaseComponent {...this.props} isVisible={this.state.isIntersecting} />
         </Observer>
       );

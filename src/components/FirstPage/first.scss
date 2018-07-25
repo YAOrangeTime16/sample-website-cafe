@@ -169,9 +169,9 @@
 .header {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   background: linear-gradient(#ffffff, rgba(255, 255, 255, 0));
-  width: 100%;
+  width: 95%;
   height: 12%;
   z-index: 200;
   animation: fadeInText 2s;
@@ -190,7 +190,7 @@
     animation: imageShift 1s linear;
   }
   @include mq(m-land){
-    top: -1rem;
+    padding-top: -1rem;
   }
 }
 
@@ -252,6 +252,20 @@
     width: 30%;
 }
 
+.loaded .image-wrapper::before {
+  width: 30%;
+
+}
+
+.loaded .image-wrapper::after {
+  width: 40%;
+  @include mq(){
+    width: 30%;
+    top: 10%;
+    right: -10%;
+  }
+}
+
 .loaded {
   overflow: hidden;
   width: 100%;
@@ -264,6 +278,7 @@
   flex-direction: row;
   writing-mode: vertical-rl;
   list-style: none;
+  margin-right: 0rem;
 }
 
 .menu {

@@ -4,7 +4,7 @@ import withIntersectionObserver from '../withIntersectionObserver';
 import Contact from './Contact';
 import './forth.css';
 
-configureAnchors({offset: 10, scrollDuration: 1000});
+configureAnchors({offset: 0, scrollDuration: 1000});
 
 class ForthPage extends Component {
 
