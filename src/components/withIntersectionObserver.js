@@ -18,7 +18,7 @@ export default threshold => BaseComponent => {
 
     render() {
       return (
-        <Observer onChange={this.handleChange} threshold={threshold} >
+        <Observer rootMargin="10px" onChange={this.handleChange} threshold={threshold} >
           <BaseComponent {...this.props} isVisible={this.state.isIntersecting} />
         </Observer>
       );

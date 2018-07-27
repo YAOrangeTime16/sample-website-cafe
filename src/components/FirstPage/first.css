@@ -44,7 +44,7 @@
 .firstPage {
   position: relative;
   width: 100%;
-  /*height: 100vh;*/ }
+  height: 100vh; }
 
 .backDecoVer,
 .backDecoHor {
@@ -119,7 +119,7 @@
   @media screen and (min-width: 600px) and (orientation: landscape) {
     .description {
       bottom: 6rem;
-      right: -25rem;
+      right: -23rem;
       width: 30%;
       font-size: 1.2rem;
       padding: 0 .5rem; } }
@@ -168,6 +168,7 @@
 .image-wrapper {
   position: relative;
   top: 3rem;
+  padding-top: 1rem;
   width: 100%;
   z-index: 100;
   overflow: hidden; }
@@ -177,12 +178,12 @@
       padding-top: 7rem;
       margin: 0 auto;
       overflow: hidden; } }
-  @media (max-width: 840px) and (orientation: landscape) {
+  @media (min-width: 700px) and (orientation: landscape) {
     .image-wrapper {
       height: 90vh;
       width: 60%;
-      top: 3rem;
-      padding-top: 4rem; } }
+      top: 5rem;
+      padding-top: 2rem; } }
   @media screen and (min-width: 1400px) {
     .image-wrapper {
       width: 60%; } }
@@ -196,20 +197,20 @@
   height: 100%;
   z-index: 250;
   transition: all 800ms linear; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 900px) {
     .image-wrapper::before,
     .image-wrapper::after {
       transform: skewX(-15deg); } }
 
 .image-wrapper::before {
-  left: -20%; }
+  left: -22%; }
   @media (max-width: 767px) and (orientation: landscape) {
     .image-wrapper::before {
       top: 0rem; } }
 
 .image-wrapper::after {
   right: -20%;
-  top: 0; }
+  top: 2%; }
 
 .loaded .image-wrapper::before,
 .loaded .image-wrapper::after {
@@ -224,7 +225,6 @@
   @media screen and (min-width: 768px) {
     .loaded .image-wrapper::after {
       width: 30%;
-      top: 10%;
       right: -10%; } }
 
 .loaded {

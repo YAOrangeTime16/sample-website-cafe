@@ -56,4 +56,4 @@ class ThirdPage extends Component {
   }
 }
 
-export default withIntersectionObserver(0.9)(ThirdPage);
+export default withIntersectionObserver(0.7)(ThirdPage);

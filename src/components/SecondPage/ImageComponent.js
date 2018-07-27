@@ -28,4 +28,4 @@ class ImageComponent extends Component {
   }
 }
 
-export default withIntersectionObserver(0.9)(ImageComponent);
+export default withIntersectionObserver(0.6)(ImageComponent);
