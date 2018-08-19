@@ -17,7 +17,6 @@ class ImageComponent extends Component {
 
     return (
       <section className="section">
-        <div className={isVisible ? 'belt' : undefined}/>
         <div  className={`box${styleNum} ${visibility}`}>
           <h2 className="subTitle">{cake}</h2>
           <img className={`photo${styleNum}`} src={imgSrc} alt="cake" />
